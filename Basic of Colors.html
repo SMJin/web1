@@ -3,23 +3,71 @@
   <head>
     <meta charset="utf-8">
     <title> Basic of Colors - welcome ! </title>
+  <!-- CSS를 이용하여 색깔 바꾸기 -->
+    <style>
+      body {
+        margin: 0;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      h1 {
+        text-decoration: none;
+        font-size: 45px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        margin:0;
+        padding:50px;
+      }
+      ol {
+        border-right: 1px solid gray;
+        width:100px;
+        margin:0;
+        padding: 33px;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #grid ol {
+        padding-left: 55px;
+      }
+      #grid #article {
+        padding-left: 77px;
+        width: 777px;
+      }
+    </style>
   </head>
   <body>
-    <h1><a href="Basic of Colors.html">Basic of Colors</a></h1>
+    <h1><a href="Basic of Colors.html" style="color:black">Basic of Colors</a></h1>
+    <div id="grid">
+      <ol>
+        <li><h3><a href="Red.html" style="color:red">Red</a></h3></li>
+        <li><h3><a href="Yellow.html" style="color:yellow">Yellow</a></h3></li>
+        <li><h3><a href="Blue.html" style="Color:blue">Blue</a></h3></li>
+      </ol>
+
+  <!-- CSS 없이 HTML의 태그로 색깔 바꾸기. 여러가지를 한꺼번에 바꾸기 매우 힘들다.
+    <h1><a href="Basic of Colors.html"><font color="black">Basic of Colors</font></a></h1>
     <ol>
-      <li><h3><a href="Red.html">Red</a></h3></li>
-      <li><h3><a href="Yellow.html">Yellow</a></h3></li>
-      <li><h3><a href="Blue.html">Blue</a></h3></li>
+      <li><h3><a href="Red.html"><font color="red">Red</font></a></h3></li>
+      <li><h3><a href="Yellow.html"><font color="yellow">Yellow</font></a></h3></li>
+      <li><h3><a href="Blue.html"><font color="blue">Blue</font></a></h3></li>
     </ol>
-    <p>Color (American English) or colour (Commonwealth English) is the
-      characteristic of human visual perception described through color
-      categories, with names such as red, blue, yellow, green, orange,
-      or purple. This perception of color derives from the stimulation
-      of cone cells in the human eye by electromagnetic radiation in the
-      spectrum of light. Color categories and physical specifications of
-      color are associated with objects through the wavelength of the light
-      that is reflected from them. This reflection is governed by the object's
-      physical properties such as light absorption, emission spectra, etc.
-      <img src="Colors.jpg" width="100%"></p>
+  -->
+    <div id ="article">
+      <p>Color (American English) or colour (Commonwealth English) is the
+        characteristic of human visual perception described through color
+        categories, with names such as red, blue, yellow, green, orange,
+        or purple. This perception of color derives from the stimulation
+        of cone cells in the human eye by electromagnetic radiation in the
+        spectrum of light. Color categories and physical specifications of
+        color are associated with objects through the wavelength of the light
+        that is reflected from them. This reflection is governed by the object's
+        physical properties such as light absorption, emission spectra, etc.
+        <img src="Colors.jpg" width="777px"></p>
+      </div>
+    </div>
   </body>
 </html>
