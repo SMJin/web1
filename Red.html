@@ -3,15 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>Basic of Colors - Red</title>
+    <style>
+      a {
+        text-decoration: none;
+      }
+      h1 {
+        text-decoration: none;
+        font-size: 45px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        margin:0;
+        padding:50px;
+      }
+      ol {
+        border-right: 1px solid gray;
+        width: 100px;
+        margin: 0;
+        padding: 33px;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #grid ol {
+        padding-left: 55px;
+      }
+      #grid #article {
+        padding-left: 77px;
+        width: 777px;
+      }
+    </style>
   </head>
   <body>
-    <h1><a href="Basic of Colors.html">Basic of Colors</a></h1>
+    <h1><a href="Basic of Colors.html"><font color="black">Basic of Colors</font></a></h1>
+    <div id="grid">
     <ol>
-      <li><h3><a href="Red.html">Red</a></h3></li>
-      <li><h3><a href="Yellow.html">Yellow</a></h3></li>
-      <li><h3><a href="Blue.html">Blue</a></h3></li>
+      <li><h3><a href="Red.html"><font color="red">Red</font></a></h3></li>
+      <li><h3><a href="Yellow.html"><font color="yellow">Yellow</font></a></h3></li>
+      <li><h3><a href="Blue.html"><font color="blue">Blue</font></a></h3></li>
     </ol>
-    Red is the color at the end of the visible spectrum of light,
+    <div id="article">
+    <p>Red is the color at the end of the visible spectrum of light,
     next to orange and opposite violet. It has a dominant wavelength
     of approximately 625–740 nanometers. [2] It is a primary color in
     the RGB color model and the CMYK color model, and is the complementary
@@ -23,6 +55,9 @@
     Iron oxide also gives the red color to the planet Mars. The red color
     of blood comes from protein hemoglobin, while ripe strawberries,
     red apples and reddish autumn leaves are colored by anthocyanins.
-    <img src="Red Roses.jpg" width="100%">
-  </body>
+    <img src="Red Roses.jpg" width="100%"> </p>
+
+</div>
+</div>
+</body>
 </html>
